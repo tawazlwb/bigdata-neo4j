@@ -1,0 +1,705 @@
+2019-04-29 17:53:12.300+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 6395011072 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2019-04-29 17:53:12.425+0000 INFO [c.n.c.r.CommercialReadReplicaEditionModule] Generated new id: MemberId{79ca16ba}
+2019-04-29 17:53:12.764+0000 INFO [o.n.c.u.s.ConnectToRandomCoreServerStrategy] Using upstream selection strategy connect-to-random-core-server
+2019-04-29 17:53:12.796+0000 INFO [o.n.c.c.TransactionBackupServiceProvider] Binding backup service on address 0.0.0.0:6365
+2019-04-29 17:53:12.968+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-04-29 17:53:12.984+0000 INFO [o.n.k.i.f.StatementLocksFactorySelector] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2019-04-29 17:53:12.984+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-04-29 17:53:12.999+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.backup.address=0.0.0.0:6365
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.mode=READ_REPLICA
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=false
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.listen_address=:7477
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.listen_address=:6477
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=D:\cluster-test\replica-01
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.listen_address=:7690
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.initial_discovery_members=localhost:5000,localhost:5001,localhost:5002
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=enterprise
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.transaction_listen_address=:6003
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 15.88 GB
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 5.28 GB
+2019-04-29 17:53:13.031+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 418.54 MB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 26.88 GB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 8.75 GB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 197.62 MB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 256.00 MB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 3.97 GB
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.75 MB, used=6.68 MB, max=240.00 MB, threshold=0.00 B
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=23.38 MB, used=22.14 MB, max=-1.00 B, threshold=0.00 B
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3.13 MB, used=2.81 MB, max=1.00 GB, threshold=0.00 B
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=147.00 MB, used=38.00 MB, max=-1.00 B, threshold=?
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=14.00 MB, used=14.00 MB, max=-1.00 B, threshold=?
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=95.00 MB, used=4.50 MB, max=3.97 GB, threshold=0.00 B
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 8
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 4120@SQLI3152
+2019-04-29 17:53:13.046+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-04-29 17:53:13.064+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: Europe/Paris
+2019-04-29 17:53:13.064+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-04-29 17:53:13.064+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-04-29 17:53:13.064+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-04-29 17:53:13.064+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.181-b13
+2019-04-29 17:53:13.065+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-04-29 17:53:13.065+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-Dlog4j.configuration=file:conf/log4j.properties, -Dneo4j.ext.udc.source=zip-powershell, -Dorg.neo4j.cluster.logdirectory=data/log, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=zip, -Dfile.encoding=UTF-8]
+2019-04-29 17:53:13.065+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-command-line-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-actor_2.11-2.5.18.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/asm-6.2.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-index-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-lang-1.4.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/eclipse-collections-api-9.2.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/lucene-core-5.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jPowerShell-1.9.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/scala-parser-combinators_2.11-1.1.1.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/scala-java8-compat_2.11-0.7.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-server-enterprise-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jersey-servlet-1.19.3.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-collections-3.2.2.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/lz4-1.3.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-rewriting-3.5-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/kiama_2.11-2.1.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-kernel-api-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-runtime-util-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/scala-reflect-2.11.12.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-configuration-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/opencsv-2.3.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-graph-algo-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-server-commercial-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/WMI4Java-1.6.1.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-ast-3.5-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-csv-3.5.5.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-distributed-data_2.11-2.5.18.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-config-ogdl-1.4.0.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/slf4j-api-1.7.25.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/sunec.jar
+2019-04-29 17:53:13.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jackson-mapper-asl-1.9.13.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/zstd-jni-1.3.8-6.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/metrics-core-4.0.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-security-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/localedata.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jersey-core-1.19.3.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jackson-core-asl-1.9.13.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/jaccess.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-spatial-index-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/lucene-codecs-5.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-stream_2.11-2.5.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-com-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/nashorn.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/istack-commons-runtime-3.0.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-codegen-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-common-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-graphdb-api-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-lang3-3.8.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-remote_2.11-2.5.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jackson-jaxrs-1.9.13.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-expression-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-client-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/simpleclient_common-0.5.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-parser-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/txw2-2.3.0.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/config-1.3.3.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-causal-clustering-commercial-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-commercial-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/aeron-client-1.11.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-values-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-enterprise-kernel-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/FastInfoset-1.2.13.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-planner-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jersey-server-1.19.3.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-logical-plans-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-security-enterprise-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/dnsns.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/asm-analysis-6.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jaxb-api-2.3.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-unsafe-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/ssl-config-core_2.11-0.3.6.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-kernel-commercial-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-lang-2.6.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cluster-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/reactive-streams-1.0.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-planner-spi-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-ir-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-diagnostics-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-event-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-cluster_2.11-2.5.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-beanutils-1.9.3.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-ir-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/netty-3.9.9.Final.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/hazelcast-all-3.7.8.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/bcpkix-jdk15on-1.60.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/simpleclient_dropwizard-0.5.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-protobuf_2.11-2.5.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-annotation-processors-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-config-core-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jProcesses-1.6.4.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-crypto-cipher-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-import-tool-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-ssl-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-compress-1.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-io-2.6.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-ha-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-metrics-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-bolt-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-crypto-hash-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-udc-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/server-api-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-backup-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-crypto-core-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-logical-plans-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-util-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-xml-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-core-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/zstd-proxy-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/lucene-analyzers-common-5.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jaxb-runtime-2.3.0.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-legacy-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-causal-clustering-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-interpreted-runtime-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-util-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/metrics-graphite-4.0.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-graph-matching-3.1.9.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-server-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-text-1.4.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/caffeine-2.6.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/sunmscapi.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-jmx-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/agrona-0.9.25.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/asm-util-6.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-expression-evaluator-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-resource-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-browser-3.2.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-procedure-api-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/parboiled-scala_2.11-1.1.7.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/scala-library-2.11.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-webapp-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jsr311-api-1.1.2.r612.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/eclipse-collections-9.2.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/plugins/*
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-management-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/sunpkcs11.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/activation-1.1.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-util-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-query-logging-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-auth-plugin-api-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/asm-tree-6.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/stax-ex-1.7.8.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-servlet-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-expressions-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/javax.servlet-api-3.1.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/simpleclient_httpserver-0.5.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-concurrent-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-compiled-expressions-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/lucene-queryparser-5.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-logging-1.1.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/shiro-cache-1.4.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/scallop_2.11-2.1.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/simpleclient-0.5.0.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/access-bridge-64.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\classes
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-planner-spi-3.4-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-lucene-upgrade-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-security-commercial-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/openCypher-frontend-1-3.4.12.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/akka-cluster-tools_2.11-2.5.18.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-dbms-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-enterprise-cypher-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-fulltext-index-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-http-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jline-2.14.3.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jaxb-core-2.3.0.1.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-io-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-lucene-index-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-physical-planning-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-logging-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-collections-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-io-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/zipfs.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-data-collector-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/bcprov-jdk15on-1.60.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/slf4j-nop-1.7.25.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/parboiled-core-1.1.7.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/jfxrt.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-morsel-runtime-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-consistency-check-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/cldrdata.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-planner-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-cypher-slotted-runtime-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-security-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/netty-all-4.1.32.Final.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/sunjce_provider.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/aeron-driver-1.11.2.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/commons-configuration-1.10.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/jetty-server-9.4.11.v20180605.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-kernel-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/D:/cluster-test/replica-01/lib/neo4j-front-end-3.5-3.5.5.jar
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Java\jdk1.8.0_181\jre\bin
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\Sun\Java\bin
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Java\jdk1.8.0_181\bin
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Embarcadero\Studio\19.0\bin
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\Public\Documents\Embarcadero\Studio\19.0\BPL
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\Public\Documents\Embarcadero\Studio\19.0\BPL\Win64
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-04-29 17:53:13.085+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\wbem
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\PuTTY
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\wbem
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\OpenSSH
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\TMSComponent\TMSEditControlsDXE11
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\nodejs
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Local\Programs\Python\Python37-32
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\WinMerge
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\TortoiseGit\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] D:\xampp\php
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\ProgramData\ComposerSetup\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Git\cmd
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\Composer\vendor\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\dotnet
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\130\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\140\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\140\DTS\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Intel\WiFi\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Common Files\Intel\WirelessCommon
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\.windows-build-tools\python27
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\.bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\Composer\vendor\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\.windows-build-tools\python27
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\.bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Local\Microsoft\WindowsApps
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Local\atom\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] D:\Programs\Microsoft VS Code\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] D:\Program Files\Firebird\Firebird_3_0
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\Composer\vendor\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\geckodriver
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\ikheiry\AppData\Roaming\npm\node_modules\chromedriver\lib\chromedriver
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] D:\cluster-test\replica-01
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.shutdownhook.enabled = false
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_181\jre\bin
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = ;
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = FR
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] user.script = 
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = 
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = D:\cluster-test\replica-01
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] neo4j.ext.udc.source = zip-powershell
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.wait.seconds.before.join = 1
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] user.variant = 
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2019-04-29 17:53:13.100+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.phone.home.enabled = false
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = zip
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.logging.type = none
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = C:\Users\ikheiry
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = Europe/Paris
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.socket.bind.any = false
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = ikheiry
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.cluster.logdirectory = data/log
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = com.neo4j.server.enterprise.CommercialEntryPoint --config-dir=D:\cluster-test\replica-01\conf --home-dir=D:\cluster-test\replica-01
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = fr
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.stderr.encoding = cp850
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = \
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.stdout.encoding = cp850
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.desktop = windows
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = amd64
+2019-04-29 17:53:13.116+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-04-29 17:53:13.132+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2018e (available for 599 zone identifiers)
+2019-04-29 17:53:13.132+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Software Loopback Interface 1:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft 6to4 Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 192.168.43.52
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:cd79:5559:2896:ac30%wlan0
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:c886:c22a:f77c:c052%eth1
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft IP-HTTPS Platform Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:f496:1dec:67f4:b45f%wlan1
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:7ddd:e9ee:2082:83fc%wlan2
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface RAS Async Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (RFCOMM Protocol TDI):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Remote NDIS Compatible Device:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 192.168.56.1
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:3498:2142:1c56:3ad2%eth7
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM-VirtualBox NDIS Light-Weight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Ethernet Connection (5) I219-LM-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-Virtual WiFi Filter Driver-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-Native WiFi Filter Driver-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-VirtualBox NDIS Light-Weight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8265-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Kaspersky Lab NDIS 6 Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-VirtualBox NDIS Light-Weight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-04-29 17:53:13.413+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-04-29 17:53:13.452+0000 INFO [o.n.m.MetricsExtension] Initiating metrics...
+2019-04-29 17:53:13.562+0000 WARN [o.n.c.r.ReadReplicaStartupProcess] Failed attempt 1 of finding upstream member
+2019-04-29 17:53:14.562+0000 WARN [o.n.c.r.ReadReplicaStartupProcess] Failed attempt 2 of finding upstream member
+2019-04-29 17:53:16.562+0000 INFO [o.n.c.r.ReadReplicaStartupProcess] Local database is empty, attempting to replace with copy from upstream server MemberId{1612da96}
+2019-04-29 17:53:16.562+0000 INFO [o.n.c.r.ReadReplicaStartupProcess] Finding store id of upstream server MemberId{1612da96}
+2019-04-29 17:53:17.150+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0x77e9078d, L:/127.0.0.1:52529 - R:localhost/127.0.0.1:6002]
+2019-04-29 17:53:17.184+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0x77e9078d, L:/127.0.0.1:52529 - R:localhost/127.0.0.1:6002]. Installing: catchup version:1
+2019-04-29 17:53:17.200+0000 INFO [o.n.c.r.ReadReplicaStartupProcess] Copying store from upstream server MemberId{1612da96}
+2019-04-29 17:53:17.231+0000 INFO [o.n.c.c.s.StoreCopyClient] Requesting store listing from: localhost:6002
+2019-04-29 17:53:17.263+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.counts.db.a
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.counts.db.b
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.labelscanstore.db
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.counts.db.a.16.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.counts.db.b.19.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.labelscanstore.db.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.labeltokenstore.db.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.labeltokenstore.db.names.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.nodestore.db.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.nodestore.db.labels.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.propertystore.db.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.propertystore.db.arrays.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.propertystore.db.index.36.cacheprof
+2019-04-29 17:53:17.278+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.propertystore.db.index.keys.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.propertystore.db.strings.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.relationshipgroupstore.db.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.relationshipstore.db.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.relationshiptypestore.db.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.relationshiptypestore.db.names.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: profiles\neostore.schemastore.db.36.cacheprof
+2019-04-29 17:53:17.294+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.nodestore.db.labels, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.nodestore.db.labels
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.nodestore.db.labels, requiredTransactionId=6}'
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.nodestore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.nodestore.db
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.nodestore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.index.keys, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.309+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.propertystore.db.index.keys
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.index.keys, requiredTransactionId=6}'
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.index, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.propertystore.db.index
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.index, requiredTransactionId=6}'
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.strings, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.propertystore.db.strings
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.strings, requiredTransactionId=6}'
+2019-04-29 17:53:17.325+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.arrays, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.propertystore.db.arrays
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db.arrays, requiredTransactionId=6}'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.propertystore.db
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.propertystore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshipstore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.relationshipstore.db
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshipstore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.341+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshiptypestore.db.names, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.356+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.relationshiptypestore.db.names
+2019-04-29 17:53:17.356+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshiptypestore.db.names, requiredTransactionId=6}'
+2019-04-29 17:53:17.356+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshiptypestore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.364+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.relationshiptypestore.db
+2019-04-29 17:53:17.365+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshiptypestore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.365+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labeltokenstore.db.names, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.labeltokenstore.db.names
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labeltokenstore.db.names, requiredTransactionId=6}'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labeltokenstore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.labeltokenstore.db
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labeltokenstore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.schemastore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.schemastore.db
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.schemastore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshipgroupstore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.368+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.relationshipgroupstore.db
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.relationshipgroupstore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labelscanstore.db, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore.labelscanstore.db
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore.labelscanstore.db, requiredTransactionId=6}'
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.StoreCopyClient] Sending request 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore, requiredTransactionId=6}' to 'localhost:6002'
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.FileHeaderHandler] Receiving file: neostore
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.StoreCopyClient] Request was successful 'GetStoreFileRequest{expectedStoreId=Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}, file=neostore, requiredTransactionId=6}'
+2019-04-29 17:53:17.383+0000 INFO [o.n.c.c.s.RemoteStore] Store files need to be recovered starting from: 6
+2019-04-29 17:53:17.430+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store D:\cluster-test\replica-01\data\databases\graph.db\temp-copy\graph.db
+2019-04-29 17:53:17.430+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-04-29 17:53:17.470+0000 INFO [o.n.c.c.s.RemoteStore] Pulling transactions from localhost:6002 starting with txId: 6
+2019-04-29 17:53:17.516+0000 INFO [o.n.c.c.t.TransactionLogCatchUpWriter] Writing checkpoint as part of store copy: LogPosition{logVersion=0, byteOffset=16}
+2019-04-29 17:53:22.515+0000 INFO [o.n.c.c.s.StoreCopyProcess] Replaced store successfully
+2019-04-29 17:53:22.515+0000 INFO [o.n.c.r.ReadReplicaStartupProcess] Restarting local database after copy.
+2019-04-29 17:53:26.515+0000 INFO [o.n.c.c.s.LocalDatabase] Starting with storeId: Store{creationTime:1556557979532, randomId:6014922315692323472, upgradeTime:1556557979532, upgradeId:1}
+2019-04-29 17:53:26.546+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store D:\cluster-test\replica-01\data\databases\graph.db
+2019-04-29 17:53:26.546+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store D:\cluster-test\replica-01\data\databases\graph.db
+2019-04-29 17:53:26.546+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-04-29 17:53:26.640+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=28598})
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: enterprise read_replica StoreId{creationTime=1556557979532, randomId=6014922315692323472, storeVersion=16094931155187206, upgradeTime=1556557979532, upgradeId=1}
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.5,9d75f7445ec02ec013d2de528c396096efedc3a5
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=137 high=136
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=2 high=1
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=137 high=136
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=135 high=134
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=2 high=1
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=2 high=1
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=1 high=0
+2019-04-29 17:53:26.640+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1556557979532
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 6014922315692323472
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 6
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1556557979532
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -160721244400
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 28598
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1556558613836
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] Oldest transaction 6 found in log with version 0
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 252904992768 / 67869589504 / 26
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-04-29T19:53:18+0200 - 0.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-04-29T19:53:19+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-04-29T19:53:17+0200 - 96.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.b: 2019-04-29T19:53:17+0200 - 352.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-04-29T19:53:26+0200 - 48.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-04-29T19:53:19+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-04-29T19:53:19+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-04-29T19:53:19+0200 - 7.97 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-04-29T19:53:19+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-04-29T19:53:19+0200 - 7.97 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-04-29T19:53:19+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-04-29T19:53:17+0200 - 8.00 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-04-29T19:53:26+0200 - 9.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-04-29T19:53:19+0200 - 27.95 kB
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]   profiles:
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.656+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.counts.db.a.16.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.counts.db.b.19.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.labelscanstore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.labeltokenstore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.labeltokenstore.db.names.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.nodestore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.nodestore.db.labels.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.propertystore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.propertystore.db.arrays.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.propertystore.db.index.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.propertystore.db.index.keys.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.propertystore.db.strings.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.relationshipgroupstore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.relationshipstore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.relationshiptypestore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.relationshiptypestore.db.names.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]     neostore.schemastore.db.36.cacheprof: 2019-04-29T19:53:17+0200 - 21.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-04-29T19:53:17+0200 - 378.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]   temp-copy:
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-04-29T19:53:22+0200 - 0.00 B
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 196.81 kB
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 167.93 kB
+2019-04-29 17:53:26.671+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-04-29 17:53:26.671+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-04-29 17:53:26.671+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-04-29 17:53:26.671+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-04-29 17:53:26.671+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup started.
+2019-04-29 17:53:26.687+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup completed. 27 pages loaded. Duration: 16ms.
+2019-04-29 17:53:27.702+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0x3b69c5a6, L:/127.0.0.1:52539 - R:localhost/127.0.0.1:6000]
+2019-04-29 17:53:27.702+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0x3b69c5a6, L:/127.0.0.1:52539 - R:localhost/127.0.0.1:6000]. Installing: catchup version:1
+2019-04-29 17:53:27.734+0000 INFO [o.n.c.n.Server] catchup-server: bound to 127.0.0.1:6003
+2019-04-29 17:53:27.749+0000 INFO [o.n.c.n.Server] backup-server: bound to 0.0.0.0:6365
+2019-04-29 17:53:31.733+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0x090dbfb1, L:/127.0.0.1:52607 - R:localhost/127.0.0.1:6001]
+2019-04-29 17:53:31.736+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0x090dbfb1, L:/127.0.0.1:52607 - R:localhost/127.0.0.1:6001]. Installing: catchup version:1
+2019-04-29 17:53:44.500+0000 INFO [o.n.m.MetricsExtension] Sending metrics to CSV file at D:\cluster-test\replica-01\metrics
+2019-04-29 17:53:44.500+0000 INFO [o.n.j.i.JmxKernelExtension] Failed to register JMX Bean org.neo4j.jmx.impl.ManagementBeanProvider[Causal Clustering] (org.neo4j.kernel.impl.util.UnsatisfiedDependencyException: No dependency satisfies type class org.neo4j.causalclustering.core.state.ClusterStateDirectory)
+2019-04-29 17:53:45.254+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-04-29 17:53:45.270+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7690.
+2019-04-29 17:53:45.765+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-04-29 17:53:45.781+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-04-29 17:53:47.116+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-04-29 17:53:47.294+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics have been registered successfully
+2019-04-29 17:53:48.078+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-04-29 18:00:30.719+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-04-29 18:00:30.739+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-04-29 18:00:30.768+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutting down 'graph.db' database.
+2019-04-29 18:00:30.769+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-04-29 18:00:30.769+0000 INFO [o.n.c.n.Server] backup-server: stopping and unbinding from: 0.0.0.0:6365
+2019-04-29 18:00:33.073+0000 WARN [o.n.c.n.Server] Worker group not shutdown within 10 seconds.
+2019-04-29 18:00:33.074+0000 INFO [o.n.c.n.Server] catchup-server: stopping and unbinding from: 127.0.0.1:6003
+2019-04-29 18:00:35.279+0000 WARN [o.n.c.n.Server] Worker group not shutdown within 10 seconds.
+2019-04-29 18:00:35.731+0000 INFO [o.n.c.c.s.LocalDatabase] Stopping, reason: Database is stopped
+2019-04-29 18:00:35.732+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 6 checkpoint started...
+2019-04-29 18:00:35.739+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 6 checkpoint completed in 7ms
+2019-04-29 18:00:35.739+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-04-29 18:00:35.816+0000 INFO [o.n.c.c.CatchUpClient] CatchUpClient stopping
+2019-04-29 18:00:35.834+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-04-29 18:00:35.834+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics END ---
